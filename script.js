@@ -1,14 +1,27 @@
-document.getElementById('search-bar').addEventListener('input', function () {
-        const query = this.value.toLowerCase(); // Obtiene el texto ingresado en minúsculas
-        const content = document.getElementById('search-content');
-        const sections = content.querySelectorAll('section'); // Selecciona todas las secciones
+$(document).ready(function () {
+    $(".enlaces a").hover(
+        function () {
+            $(this).css({
+                color: "hotpink",
+                "font-size": "120%",
+                "text-decoration": "underline",
+            });
+        },
+        function () {
+            $(this).css({
+                color: "",
+                "font-size": "",
+                "text-decoration": "",
+            });
+        }
+    );
+});
 
-        sections.forEach(section => {
-            const text = section.textContent.toLowerCase(); // Convierte el texto de la sección a minúsculas
-            if (text.includes(query)) {
-                section.style.display = ''; // Muestra la sección si coincide
-            } else {
-                section.style.display = 'none'; // Oculta la sección si no coincide
-            }
-        });
+$(document).ready(function () {
+    $("#iconos").click(function () {
+        $("#habilidades").animate({
+            opacity: "toggle",
+            height: "toggle"
+        }, 1000); // Combina opacidad y altura
     });
+});
