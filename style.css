@@ -242,7 +242,7 @@ footer {
 }
 
 /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .sidebar {
         width: 100%; /* La barra lateral ocupa todo el ancho */
         float: none; /* Evita que flote */
@@ -250,11 +250,11 @@ footer {
     }
 
     .profile-pic {
-        width: 150px; /* Ajusta el tamaño de la imagen */
+        width: 9.375rem; /* Ajusta el tamaño de la imagen */
         margin: 0 auto; /* Centra la imagen */
     }
 
     .contacto {
-        font-size: 16px; /* Aumenta el tamaño del texto para mejor legibilidad */
+        font-size: 1rem; /* Aumenta el tamaño del texto para mejor legibilidad */
     }
 }
