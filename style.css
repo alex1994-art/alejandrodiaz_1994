@@ -243,12 +243,37 @@ footer {
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 48rem) {
+    
+    h2, h3, h4 {
+        font-size: 1.2rem; /* Reduce el tamaño de los encabezados */
+    }
+
+    body {
+        font-size: 0.9rem; /* Reduce el tamaño general del texto */
+    }
     .sidebar {
-        width: 100%; /* La barra lateral ocupa todo el ancho */
-        float: none; /* Evita que flote */
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 1rem;
         text-align: center; /* Centra el contenido */
     }
 
+    .sidebar ul {
+        padding: 0;
+    }
+
+    .sidebar ul li {
+        margin: 0.5rem 0;
+    }
+
+    .container {
+        flex-direction: column; /* Apila los elementos */
+        align-items: center; /* Centra los elementos */
+        padding: 0;
+    }
+
+    .content {
+        width: 100%; /* Ocupa todo el ancho */
+    }
     .profile-pic {
         width: 9.375rem; /* Ajusta el tamaño de la imagen */
         margin: 0 auto; /* Centra la imagen */
@@ -256,5 +281,31 @@ footer {
 
     .contacto {
         font-size: 1rem; /* Aumenta el tamaño del texto para mejor legibilidad */
+    }
+
+    .recipe img {
+        max-width: 100%; /* Asegura que las imágenes no se desborden */
+        height: auto;
+    }
+
+    .recipe h2 {
+        font-size: 1.2rem; /* Reduce el tamaño del texto */
+    }
+
+    .recipe p {
+        margin: 0.5rem; /* Ajusta los márgenes */
+    }
+
+    .portfolio-icon, .portfolio-diseño {
+        width: 90%; /* Reduce el ancho */
+        margin: 1rem auto; /* Centra los elementos */
+    }
+    footer {
+        font-size: 0.8rem; /* Reduce el tamaño del texto */
+        padding: 0; /* Ajusta el padding */
+    }
+
+    header {
+        padding: 0.8rem; /* Reduce el padding */
     }
 }
