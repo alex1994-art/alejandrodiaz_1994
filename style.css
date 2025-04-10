@@ -240,3 +240,21 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* La barra lateral ocupa todo el ancho */
+        float: none; /* Evita que flote */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .profile-pic {
+        width: 150px; /* Ajusta el tamaño de la imagen */
+        margin: 0 auto; /* Centra la imagen */
+    }
+
+    .contacto {
+        font-size: 16px; /* Aumenta el tamaño del texto para mejor legibilidad */
+    }
+}
