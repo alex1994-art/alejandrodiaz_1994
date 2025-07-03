@@ -1,78 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Web</title>
-    <link rel="icon" href="img/icono.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-     <header style="text-align: center; padding: 2rem;">
-    <a href="index.html" class="inicio-boton">Inicio</a>
-</header>
-    <div class="container">
-        <aside class="sidebar">
-            <div class = "contacto">
-                <h3>Contacto</h3>
-                <p>Teléfono: 629891899</p>
-                <p><a href="mailto:alejandrodiazpena@gmail.com">alejandrodiazpena@gmail.com</a></p>
-                <p>C.P. 50629</p>
-            </div>
-        </aside>
-        </aside>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería</title>
+    <link rel="stylesheet" href="css/style-gallery.css" />
+  </head>
 
-        <!---comentarios del contenedor-->
-        <main class="content" id="search-content">
-            <div class="portfolio">
-                <div class="portfolio-diseño">
-                    <p>Calendario</p>
-                    <img src="img/Mockup Calendario.jpg" alt="Calendario" class="diseño">
-                </div>
-                <div class="portfolio-icon">
-                    <p>Carteles</p>
-                    <img src="img/Cartel Zaragoza en negro.jpg" alt="Cartel1" class="diseño">
-                    <img src="img/Cartel 2 The Hub Kings Corner Maquetar.jpg" alt="cartel2" class="diseño">
-                </div>
-                <div class="portfolio-icon">
-                    <p>Catálogo</p>
-                    <img src="img/Mockup Catalogo de comida.jpg" alt="Catálogo" class="diseño">
-                </div>
-                <div class="portfolio-icon">
-                    <p>Revista</p>
-                    <img src="img/Mockup-Revista-interactiva.jpg" alt="revista" class="diseño">
-                </div>
-                <div class="portfolio-icon">
-                    <p>Banners</p>
-                    <img src="img/MegaBanner-Yelmo.jpg" alt="megabanner" class="diseño">
-                    <img src="img/Robapagina-banner-cine.jpg" alt="robapagina" class="diseño">
-                </div>
-                <div class="portfolio-icon">
-                    <p>Web</p>
-                    <img src="img/FireShot Capture 011 - Blog de Repostería - [].png" altç="web" class="diseño">
-                </div>
-                <div class="portfolio-icon">
-                    <p>Folleto</p>
-                    <img src="img/Folleto triptico Moda cliente_00001.jpg" alt="folleto" class="diseño">
-                    <img src="img/Folleto triptico Moda cliente_00002.jpg" alt="folleto" class="diseño">
-                </div>
-                <div class="portfolio-icon">
-                    <p>Covers E-Book</p>
-                    <img src="img/Cover.jpg" alt="cover1" class="diseño">
-                    <img src="img/Cover Narnia.jpg" alt="cover2" class="diseño">
-                </div>
-                <div class="portfolio-icon">
-                    <p>Anuncio retórico</p>
-                    <img src="img/Anuncio Retorica Visual maquetar.jpg" alt="anuncio" class="diseño">
-                </div>
-            </div>
-        </main>
-    </div>
-    <br>
+  <body>
+    <!-- Botón de modo oscuro -->
+    <button id="btn-theme" class="btn-theme" aria-label="Cambiar tema">Tema</button>
+
+    <!-- Cabecera y navegación -->
+    <header>
+      <h1> Galeria</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="inicio">
+      <!-- Galería -->
+      <section id="galeria" class="gallery">
+        <article class="card">
+          <img src="img/Anuncio Retorica Visual maquetar.jpg" alt="Anuncio Retorica" />
+          <h2>Anuncio Cine Yelmo</h2>
+        </article>
+        <article class="card">
+          <img src="img/Cartel Zaragoza en negro.jpg" alt="Cartel 1" />
+          <h2>Zaragoza en Negro</h2>
+        </article>
+        <article class="card">
+          <img src="img/Cartel 2 The Hub Kings Corner Maquetar.jpg" alt="Cartel 2" />
+          <h2>The Hub Kings Corner</h2>
+        </article>
+        <article class="card">
+          <img src="img/Cover.jpg" alt="Cover 1" />
+          <h2>Cuento de Navidad - E-book</h2>
+        </article>
+        <article class="card">
+          <img src="img/Cover Narnia.jpg" alt="Cover 2" />
+          <h2>Las Cronicas de Narnia - E-book</h2>
+        </article>
+        <article class="card">
+          <img src="img/Folleto triptico Moda cliente_00001.jpg" alt="Folleto 1" />
+          <h2>Folleto Moda Cliente</h2>
+        </article>
+         <article class="card">
+          <img src="img/Folleto triptico Moda cliente_00002.jpg" alt="Folleto 2" />
+          <h2>Folleto Moda Cliente 2</h2>
+        </article>
+         <article class="card">
+          <img src="img/MegaBanner-Yelmo.jpg" alt="Megabanner" />
+          <h2>Megabanner Yelmo</h2>
+        </article>
+      </section>
+    </main>
+
+    <!-- Pie de página (con fade-in) -->
     <footer>
-        <p>&copy; 2025 Alejandro Díaz Peña. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Alejandro Díaz Peña. Todos los derechos reservados.</p>
     </footer>
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+
+    <script src="app.js"></script>
+  </body>
 </html>
