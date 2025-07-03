@@ -1,0 +1,167 @@
+/* ================= VARIABLES DE COLOR ================= */
+:root {
+  --c-bg: #ffffff;
+  --c-text: #222222;
+  --c-primary: #0073e6;
+  --c-card: #f5f5f5;
+}
+
+.dark {
+  --c-bg: #1a1a1a;
+  --c-text: #e0e0e0;
+  --c-primary: #66aaff;
+  --c-card: #2a2a2a;
+}
+
+/* ================ RESET BÁSICO ======================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background: var(--c-bg);
+  color: var(--c-text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ================ BOTÓN TEMA ========================== */
+.btn-theme {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: var(--c-primary);
+  color: #fff;
+  z-index: 1000;
+}
+
+/* ================ HEADER & NAV ======================= */
+header {
+background-color: #0073e6; /* Color de fondo del header */
+text-align: center; /* Centrar el texto */
+color: #ffffff; /* Color del texto */
+padding: 1rem 0; /* Espaciado interno */
+margin-top: 2rem; /* Espacio superior */
+margin-bottom: 2rem; /* Espacio inferior */
+}
+
+nav a {
+
+  color: #ffffff; /* Color del texto de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  display: flexbox; /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+
+
+}
+
+nav a:hover {
+  color: #ffcc00; /* Color al pasar el ratón */ 
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+/* ================ GALERÍA ============================ */
+.gallery {
+
+display: grid; /* Usar grid para la galería */
+  grid-template-columns: 1fr; /* Una columna por defecto */
+  gap: 20px; /* Espacio entre elementos */
+  max-width: 1000px; /* Ancho máximo de la galería */
+  margin: auto; /* Centrar la galería */
+  padding: 1rem; /* Espaciado interno */
+
+}
+
+/* 3 columnas en pantallas grandes, 1 en móviles */
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+  }
+}
+
+
+.card {
+
+  background-color: var(--c-card); /* Color de fondo de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden; /* Ocultar desbordamiento */
+  text-align: center; /* Centrar el texto */
+  transition: transform 0.2s ease; /* Transición suave al hacer hover */
+  
+}
+
+.card:hover {
+
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+
+
+}
+
+.card img {
+
+  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+  height: auto; /* Altura automática para mantener la proporción */
+  display: block; /* Mostrar como bloque para evitar espacios debajo de la imagen */
+
+
+}
+
+.card h2 {
+
+  font-size: 1.1rem; /* Tamaño de fuente del título */
+  margin: 10px 0; /* Espacio arriba y abajo del título */
+  color: var(--c-text); /* Color del texto del título */
+ 
+}
+
+
+body.dark-theme {
+  background-color: #18181b;
+  color: #f1f5f9;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+  background-color: #23272f;
+  color: #f1f5f9;
+}
+
+body.dark-theme .card {
+  background-color: #27272a;
+  color: #f1f5f9;
+}
+
+body.dark-theme .card h2 {
+  color: #f1f5f9;
+}
+
+/* ================= FOOTER (fade-in) ================= */
+footer {
+
+  background-color: #0073e6; /* Color de fondo del footer */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+  padding: 1rem 0; /* Espaciado interno */
+  margin-top: 2rem; /* Espacio superior */
+  animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Opacidad final */
+  }
+}
