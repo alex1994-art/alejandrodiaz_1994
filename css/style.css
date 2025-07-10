@@ -1,3 +1,12 @@
+.icon {
+    width: 100px; /* Tamaño uniforme para todos los iconos */
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
 .inicio-boton {
     display: inline-block;
     background-color: #007bff;
@@ -261,6 +270,15 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.diseño {
+            width: 30rem;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .portfolio-icon, .portfolio-diseño {
+            margin-bottom: 2rem;
+        }
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 48rem) {
