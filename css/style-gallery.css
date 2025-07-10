@@ -111,12 +111,11 @@ display: grid; /* Usar grid para la galería */
 }
 
 .card img {
-
-  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
-  height: auto; /* Altura automática para mantener la proporción */
-  display: block; /* Mostrar como bloque para evitar espacios debajo de la imagen */
-
-
+  width: 100%;
+  height: 250px; /* Altura fija para comparar efectos */
+  object-fit: contain; /* Cambia entre contain y cover para ver la diferencia */
+  display: block;
+  background: #fff; /* Opcional: fondo blanco para ver los huecos */
 }
 
 .card h2 {
